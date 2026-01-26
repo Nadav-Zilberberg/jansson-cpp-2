@@ -1,0 +1,3498 @@
+[
+    {
+        "name": ".git",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/.git",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "android",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/android",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "jansson_config.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/android/jansson_config.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "b004989a2650c4f4f9abf6dc74d8da055bee5b2d749aa68b20ce69e9b6da6637"
+    },
+    {
+        "name": "cmake",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "CheckFunctionKeywords.cmake",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake/CheckFunctionKeywords.cmake",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "CodeCoverage.cmake",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake/CodeCoverage.cmake",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "FindSphinx.cmake",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake/FindSphinx.cmake",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "janssonConfig.cmake.in",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake/janssonConfig.cmake.in",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "jansson_config.h.cmake",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake/jansson_config.h.cmake",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "jansson_private_config.h.cmake",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/cmake/jansson_private_config.h.cmake",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "doc",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "ext",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/ext",
+        "level": 1,
+        "type": "directory"
+    },
+    {
+        "name": "refcounting.py",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/ext/refcounting.py",
+        "level": 2,
+        "type": "file",
+        "language": "Python",
+        "classes": {
+            "refcounting": [],
+            "refcounting_directive": [
+                "run"
+            ]
+        },
+        "functions": [
+            "visit",
+            "depart",
+            "html_visit",
+            "html_depart",
+            "setup"
+        ],
+        "constants": [],
+        "imports": [
+            "docutils.nodes",
+            "docutils.parsers.rst.Directive"
+        ],
+        "description": "refcounting\n~~~~~~~~~~~\n\nReference count annotations for C API functions. Has the same\nresult as the sphinx.ext.refcounting extension but works for all\nfunctions regardless of the signature, and the reference counting\ninformation is written inline with the documentation instead of a\nseparate file.\n\nAdds a new directive \"refcounting\". The directive has no content\nand one required positional parameter:: \"new\" or \"borrow\".\n\nExample:\n\n.. cfunction:: json_t *json_object(void)\n\n   .. refcounting:: new\n\n   <description of the json_object function>\n\n:copyright: Copyright (c) 2009-2016 Petri Lehtinen <petri@digip.org>\n:license: MIT, see LICENSE for details.",
+        "hash": "32b5836c7c43212505a862bb99c4fc6b79b2e4338ee4fd7659851ee0339cc05a"
+    },
+    {
+        "name": ".gitignore",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/.gitignore",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": ".readthedocs.yaml",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/.readthedocs.yaml",
+        "level": 1,
+        "type": "file",
+        "language": "YAML",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "d412cb4d37a13194a862c384cf4306ba20f3d3ada3816d3c03f072f99f8e2ee2"
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/Makefile.am",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "README",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/README",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "apiref.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/apiref.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "changes.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/changes.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "conf.py",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/conf.py",
+        "level": 1,
+        "type": "file",
+        "language": "Python",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [
+            "sys",
+            "os"
+        ],
+        "description": "",
+        "hash": "266070c90266ec43555836a9017c07341fc67f9e04c2d09f04ca72b8d2dc90ce"
+    },
+    {
+        "name": "conformance.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/conformance.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "gettingstarted.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/gettingstarted.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "github_commits.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/github_commits.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "index.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/index.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "threadsafety.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/threadsafety.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "tutorial.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/tutorial.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "upgrading.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/doc/upgrading.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "examples",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/examples",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "README.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/examples/README.rst",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple_parse.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/examples/simple_parse.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "scripts",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/scripts",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "clang-format",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/scripts/clang-format",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "clang-format-check",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/scripts/clang-format-check",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "src",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/Makefile.am",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "dtoa.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/dtoa.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "dump.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/dump.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/error.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "hashtable.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/hashtable.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "hashtable.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/hashtable.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "618db327581ff41e3cbd2a0b31bbfd626beb734be7445736be05b53142edfba6"
+    },
+    {
+        "name": "hashtable_seed.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/hashtable_seed.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "jansson.def",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/jansson.def",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "jansson.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/jansson.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "4bfb687cea2b77fc48b21a09ac36375e92beabb2dae179ee7c0cd570e7354959"
+    },
+    {
+        "name": "jansson_config.h.in",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/jansson_config.h.in",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "jansson_private.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/jansson_private.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "cc1d73e88213346e19b9742546f7b558162dc5f35758fde44910ac9e5e7a4d53"
+    },
+    {
+        "name": "load.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/load.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "lookup3.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/lookup3.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "clang-format off",
+        "hash": "badd49b7cc0ef7ea38c409238a910fc51ccd675e48a020d6479b61d7714bc3a6"
+    },
+    {
+        "name": "memory.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/memory.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "pack_unpack.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/pack_unpack.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "strbuffer.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/strbuffer.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "strbuffer.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/strbuffer.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "d37bb239c6332d504a8674563851a7609124886c5c891b9c1541ccec4965b89d"
+    },
+    {
+        "name": "strconv.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/strconv.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "utf.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/utf.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "utf.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/utf.h",
+        "level": 1,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "141fedd83a03ff5ad00b36d444b6939e38afb791382d6ea2de1650772f9a3699"
+    },
+    {
+        "name": "value.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/value.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "version.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/src/version.c",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test",
+        "level": 0,
+        "type": "directory"
+    },
+    {
+        "name": "bin",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/bin",
+        "level": 1,
+        "type": "directory"
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/bin/Makefile.am",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "json_process.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/bin/json_process.c",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "ossfuzz",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz",
+        "level": 1,
+        "type": "directory"
+    },
+    {
+        "name": ".gitignore",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz/.gitignore",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz/Makefile.am",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "json_load_dump_fuzzer.cc",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz/json_load_dump_fuzzer.cc",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "ossfuzz.sh",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz/ossfuzz.sh",
+        "level": 2,
+        "type": "file",
+        "language": "Shell",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "cd68e437da3efa6de14c6cbc2664021d10b621acb20376e17a02bc86d59fb53c"
+    },
+    {
+        "name": "standaloneengine.cc",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz/standaloneengine.cc",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "testinput.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/ossfuzz/testinput.h",
+        "level": 2,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "e6f6e895035c6f364274cd0c67ffe707108eed7310c008447519824af16e75c9"
+    },
+    {
+        "name": "scripts",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/scripts",
+        "level": 1,
+        "type": "directory"
+    },
+    {
+        "name": "run-tests.sh",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/scripts/run-tests.sh",
+        "level": 2,
+        "type": "file",
+        "language": "Shell",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "fe458618b67510393f459c96d361c449dab8ab73959e3f386d100e78c3c7fe8a"
+    },
+    {
+        "name": "valgrind.sh",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/scripts/valgrind.sh",
+        "level": 2,
+        "type": "file",
+        "language": "Shell",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "48e5484ab8def78ed1b643f3f9fe6def38238f9504dc937b709a6a179d21106b"
+    },
+    {
+        "name": "suites",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites",
+        "level": 1,
+        "type": "directory"
+    },
+    {
+        "name": "api",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api",
+        "level": 2,
+        "type": "directory"
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/Makefile.am",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "check-exports",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/check-exports",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "run",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/run",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_array.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_array.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_chaos.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_chaos.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_chaos_realloc.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_chaos_realloc.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_copy.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_copy.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_dump.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_dump.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_dump_callback.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_dump_callback.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_equal.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_equal.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_fixed_size.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_fixed_size.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_load.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_load.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_load_callback.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_load_callback.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_loadb.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_loadb.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_memory_funcs.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_memory_funcs.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_memory_funcs_realloc.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_memory_funcs_realloc.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_number.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_number.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_object.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_object.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_pack.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_pack.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_simple.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_simple.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_sprintf.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_sprintf.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_unpack.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_unpack.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "test_version.c",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/test_version.c",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "util.h",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/api/util.h",
+        "level": 3,
+        "type": "file",
+        "language": "C++",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "cdf94081bb9c182d75f127f4d10f6302e523f805c221c00a8d405d7b9b6cc349"
+    },
+    {
+        "name": "encoding-flags",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags",
+        "level": 2,
+        "type": "directory"
+    },
+    {
+        "name": "array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "compact-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-array/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "compact-object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-object/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/compact-object/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "ensure-ascii",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/ensure-ascii",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/ensure-ascii/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/ensure-ascii/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/ensure-ascii/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "indent-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-array/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "indent-compact-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-array/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "indent-compact-object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-object/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-compact-object/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "indent-object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-object/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/indent-object/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/object/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/object/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "preserve-order",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/preserve-order",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/preserve-order/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/preserve-order/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/preserve-order/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-precision",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/real-precision",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/real-precision/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/real-precision/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/real-precision/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "sort-keys",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/sort-keys",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/sort-keys/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/sort-keys/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/sort-keys/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "run",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/encoding-flags/run",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid",
+        "level": 2,
+        "type": "directory"
+    },
+    {
+        "name": "apostrophe",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/apostrophe",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/apostrophe/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/apostrophe/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "ascii-unicode-identifier",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/ascii-unicode-identifier",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/ascii-unicode-identifier/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/ascii-unicode-identifier/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "brace-comma",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/brace-comma",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/brace-comma/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/brace-comma/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "bracket-comma",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-comma",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-comma/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-comma/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "bracket-one-comma",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-one-comma",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-one-comma/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-one-comma/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/bracket-one-comma/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "empty",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/empty",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/empty/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/empty/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "extra-comma-in-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/extra-comma-in-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/extra-comma-in-array/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/extra-comma-in-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "extra-comma-in-multiline-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/extra-comma-in-multiline-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/extra-comma-in-multiline-array/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/extra-comma-in-multiline-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "garbage-after-newline",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/garbage-after-newline",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/garbage-after-newline/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/garbage-after-newline/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "garbage-at-the-end",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/garbage-at-the-end",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/garbage-at-the-end/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/garbage-at-the-end/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "integer-starting-with-zero",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/integer-starting-with-zero",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/integer-starting-with-zero/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/integer-starting-with-zero/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-escape",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-escape",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-escape/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-escape/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-identifier",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-identifier",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-identifier/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-identifier/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-negative-integer",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-negative-integer",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-negative-integer/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-negative-integer/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-negative-real",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-negative-real",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-negative-real/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-negative-real/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-second-surrogate",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-second-surrogate",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-second-surrogate/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-second-surrogate/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-unicode-escape",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-unicode-escape",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-unicode-escape/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/invalid-unicode-escape/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "lone-open-brace",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-brace",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-brace/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-brace/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-brace/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "lone-open-bracket",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-bracket",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-bracket/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-bracket/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-open-bracket/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "lone-second-surrogate",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-second-surrogate",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-second-surrogate/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/lone-second-surrogate/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "minus-sign-without-number",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/minus-sign-without-number",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/minus-sign-without-number/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/minus-sign-without-number/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "negative-integer-starting-with-zero",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/negative-integer-starting-with-zero",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/negative-integer-starting-with-zero/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/negative-integer-starting-with-zero/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "null",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "null-byte-in-object-key",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-object-key",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-object-key/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-object-key/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "null-byte-in-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-string/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "nostrip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-in-string/nostrip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "null-byte-outside-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-outside-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-outside-string/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-outside-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "nostrip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-byte-outside-string/nostrip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "null-escape-in-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-escape-in-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-escape-in-string/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/null-escape-in-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object-apostrophes",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-apostrophes",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-apostrophes/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-apostrophes/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object-garbage-at-end",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-garbage-at-end",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-garbage-at-end/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-garbage-at-end/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object-in-unterminated-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-in-unterminated-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-in-unterminated-array/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-in-unterminated-array/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-in-unterminated-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object-no-colon",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-colon",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-colon/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-colon/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-colon/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object-no-value",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-value",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-value/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-value/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-no-value/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "object-unterminated-value",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-unterminated-value",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-unterminated-value/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-unterminated-value/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/object-unterminated-value/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-garbage-after-e",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-garbage-after-e",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-garbage-after-e/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-garbage-after-e/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-negative-overflow",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-negative-overflow",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-negative-overflow/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-negative-overflow/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-positive-overflow",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-positive-overflow",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-positive-overflow/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-positive-overflow/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-truncated-at-e",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-truncated-at-e",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-truncated-at-e/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-truncated-at-e/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-truncated-at-point",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-truncated-at-point",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-truncated-at-point/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/real-truncated-at-point/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "recursion-depth",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/recursion-depth",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/recursion-depth/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/recursion-depth/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "tab-character-in-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/tab-character-in-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/tab-character-in-string/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/tab-character-in-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "too-big-negative-integer",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/too-big-negative-integer",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/too-big-negative-integer/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/too-big-negative-integer/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "too-big-positive-integer",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/too-big-positive-integer",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/too-big-positive-integer/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/too-big-positive-integer/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "truncated-unicode-surrogate",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/truncated-unicode-surrogate",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/truncated-unicode-surrogate/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/truncated-unicode-surrogate/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unicode-identifier",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unicode-identifier",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unicode-identifier/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unicode-identifier/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unterminated-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unterminated-array-and-object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array-and-object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array-and-object/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array-and-object/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-array-and-object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unterminated-empty-key",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-empty-key",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-empty-key/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-empty-key/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-empty-key/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unterminated-key",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-key",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-key/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-key/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-key/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unterminated-object-and-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-object-and-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-object-and-array/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-object-and-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "unterminated-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error.normal",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-string/error.normal",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "error.strip",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-string/error.strip",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/unterminated-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "run",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid/run",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-unicode",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode",
+        "level": 2,
+        "type": "directory"
+    },
+    {
+        "name": "encoded-surrogate-half",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/encoded-surrogate-half",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/encoded-surrogate-half/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/encoded-surrogate-half/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-after-backslash",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-after-backslash",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-after-backslash/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-after-backslash/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-array/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-bigger-int",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-bigger-int",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-bigger-int/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-bigger-int/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-escape",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-escape",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-escape/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-escape/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-exponent/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-identifier",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-identifier",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-identifier/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-identifier/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-int",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-int",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-int/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-int/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-real-after-e",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-real-after-e",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-real-after-e/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-real-after-e/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "invalid-utf-8-in-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-string/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/invalid-utf-8-in-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "lone-invalid-utf-8",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/lone-invalid-utf-8",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/lone-invalid-utf-8/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/lone-invalid-utf-8/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "lone-utf-8-continuation-byte",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/lone-utf-8-continuation-byte",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/lone-utf-8-continuation-byte/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/lone-utf-8-continuation-byte/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "not-in-unicode-range",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/not-in-unicode-range",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/not-in-unicode-range/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/not-in-unicode-range/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "overlong-3-byte-encoding",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-3-byte-encoding",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-3-byte-encoding/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-3-byte-encoding/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "overlong-4-byte-encoding",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-4-byte-encoding",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-4-byte-encoding/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-4-byte-encoding/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "overlong-ascii-encoding",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-ascii-encoding",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-ascii-encoding/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/overlong-ascii-encoding/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "restricted-utf-8",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/restricted-utf-8",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/restricted-utf-8/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/restricted-utf-8/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "truncated-utf-8",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/truncated-utf-8",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "error",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/truncated-utf-8/error",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/truncated-utf-8/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "run",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/invalid-unicode/run",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "valid",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid",
+        "level": 2,
+        "type": "directory"
+    },
+    {
+        "name": "complex-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/complex-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "env",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/complex-array/env",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/complex-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/complex-array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "empty-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "empty-object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-object/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "empty-object-in-array",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-object-in-array",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-object-in-array/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-object-in-array/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "empty-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/empty-string/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "escaped-utf-control-char",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/escaped-utf-control-char",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/escaped-utf-control-char/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/escaped-utf-control-char/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "false",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/false",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/false/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/false/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "negative-int",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-int",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-int/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-int/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "negative-one",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-one",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-one/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-one/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "negative-zero",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-zero",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-zero/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/negative-zero/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "null",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/null",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/null/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/null/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "one-byte-utf-8",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/one-byte-utf-8",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/one-byte-utf-8/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/one-byte-utf-8/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-capital-e",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-capital-e-negative-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e-negative-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e-negative-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e-negative-exponent/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-capital-e-positive-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e-positive-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e-positive-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-capital-e-positive-exponent/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "skip_unless_dtoa",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent/skip_unless_dtoa",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-exponent-no-dtoa",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent-no-dtoa",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent-no-dtoa/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent-no-dtoa/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "skip_if_dtoa",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-exponent-no-dtoa/skip_if_dtoa",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-fraction-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-fraction-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-fraction-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-fraction-exponent/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-negative-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-negative-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-negative-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-negative-exponent/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-positive-exponent",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-positive-exponent",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-positive-exponent/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-positive-exponent/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-subnormal-number",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-subnormal-number",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-subnormal-number/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-subnormal-number/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "real-underflow",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-underflow",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-underflow/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/real-underflow/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "short-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/short-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/short-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/short-string/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple-ascii-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-ascii-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-ascii-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-ascii-string/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple-int-0",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-0",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-0/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-0/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple-int-1",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-1",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-1/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-1/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple-int-123",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-123",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-123/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-int-123/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple-object",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-object",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-object/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-object/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "simple-real",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-real",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-real/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/simple-real/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "string-escapes",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/string-escapes",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/string-escapes/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/string-escapes/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "three-byte-utf-8",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/three-byte-utf-8",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/three-byte-utf-8/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/three-byte-utf-8/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "true",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/true",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/true/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/true/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "two-byte-utf-8",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/two-byte-utf-8",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/two-byte-utf-8/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/two-byte-utf-8/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "utf-8-string",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/utf-8-string",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/utf-8-string/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/utf-8-string/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "utf-surrogate-four-byte-encoding",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/utf-surrogate-four-byte-encoding",
+        "level": 3,
+        "type": "directory"
+    },
+    {
+        "name": "input",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/utf-surrogate-four-byte-encoding/input",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "output",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/utf-surrogate-four-byte-encoding/output",
+        "level": 4,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "run",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/valid/run",
+        "level": 3,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": ".gitattributes",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/.gitattributes",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/suites/Makefile.am",
+        "level": 2,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": ".gitignore",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/.gitignore",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/Makefile.am",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "run-suites",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/test/run-suites",
+        "level": 1,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": ".clang-format",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/.clang-format",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": ".gitignore",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/.gitignore",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "Analysis.html",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/Analysis.html",
+        "level": 0,
+        "type": "file",
+        "language": "HTML",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "f6633d61ba418aa46ffb8e20ce2410d8a0d123c6fa775eaebe4f8540dd203039"
+    },
+    {
+        "name": "Android.mk",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/Android.mk",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "CHANGES",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/CHANGES",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "CMakeLists.txt",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/CMakeLists.txt",
+        "level": 0,
+        "type": "file",
+        "language": "Text",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "154b0773ed19f67a9f66a556cfaf4e169fd824bb5aff7d1605a7a459715a53da"
+    },
+    {
+        "name": "CONTRIBUTING.md",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/CONTRIBUTING.md",
+        "level": 0,
+        "type": "file",
+        "language": "Markdown",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "85a835bd9d15a09dba4094f22513a89dafd595603e477567608121b69c77d88d"
+    },
+    {
+        "name": "CleanSpec.mk",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/CleanSpec.mk",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "LICENSE",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/LICENSE",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "Makefile.am",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/Makefile.am",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "README.rst",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/README.rst",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "SECURITY.md",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/SECURITY.md",
+        "level": 0,
+        "type": "file",
+        "language": "Markdown",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "2dc48c7a4bdec2eb563e42eb304b80e72dd0bb950e08ca97f14c8acf9d58eb66"
+    },
+    {
+        "name": "appveyor.yml",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/appveyor.yml",
+        "level": 0,
+        "type": "file",
+        "language": "YAML",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "8f20bf68deb76e915f2dce67d8f563082f039dd7b5b8f146c968f4449ca751cd"
+    },
+    {
+        "name": "configure.ac",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/configure.ac",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "jansson.pc.in",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/jansson.pc.in",
+        "level": 0,
+        "type": "file",
+        "language": null
+    },
+    {
+        "name": "release.sh",
+        "path": "/mnt/c/Users/nadav/Work/jansson-original/release.sh",
+        "level": 0,
+        "type": "file",
+        "language": "Shell",
+        "classes": {},
+        "functions": [],
+        "constants": [],
+        "imports": [],
+        "description": "",
+        "hash": "6ebbba8293045d6716787d04da0dde0a6a46d39cfce2be65dc4629a05fc6a5b2"
+    }
+]
