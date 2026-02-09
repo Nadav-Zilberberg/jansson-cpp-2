@@ -132,6 +132,15 @@ public:
      */
     std::string toString() const;
 
+    /**
+     * @brief Access the underlying variant (for dumping).
+     */
+    const std::variant<std::monostate, bool, double, int64_t, std::string,
+                       std::unique_ptr<JsonObject>, std::unique_ptr<JsonArray>>&
+                       raw_variant() const noexcept {
+        return data_;
+    }
+
     /*=====================================================================
      *  Assignment Operators for Each Type
      *====================================================================*/
