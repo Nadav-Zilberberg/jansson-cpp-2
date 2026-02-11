@@ -12,6 +12,9 @@ add_compile_options(-Wall -Wextra -pedantic)
 # Add subdirectory containing the C++ implementation
 add_subdirectory(jsson-cpp)
 
+# Add examples directory
+add_subdirectory(examples)
+
 # Installation rules for the library and headers
 install(TARGETS jsson-cpp
         EXPORT jsson-cpp-targets
