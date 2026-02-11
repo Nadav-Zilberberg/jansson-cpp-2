@@ -167,7 +167,7 @@ private:
 
 class JsonObject {
 public:
-    using Map = std::unordered_map<std::string, JsonValue>;
+    using Map = std::unordered_map<std::string, std::shared_ptr<JsonValue>>;
 
     JsonObject() = default;
     explicit JsonObject(const Map& map) : data_(map) {}
@@ -195,7 +195,7 @@ private:
 
 class JsonArray {
 public:
-    using Vec = std::vector<JsonValue>;
+    using Vec = std::vector<std::shared_ptr<JsonValue>>;
 
     JsonArray() = default;
     explicit JsonArray(Vec&& vec) : data_(std::move(vec)) {}

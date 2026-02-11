@@ -1,28 +1,26 @@
 #include "hashtable.hpp"
-
-#include <json.h>  // Assuming json_t is available from the original library
 #include <stdexcept>
 #include <string>
 
 /**
- * @brief Concrete hash table implementation for JSON strings and json_t values.
+ * @brief Concrete hash table implementation for JSON strings and void* values.
  *
  * This class provides a thread-safe, modern C++ wrapper around the functionality
  * previously implemented in hashtable.c. It uses `std::unordered_map` for
- * storage and `std::shared_ptr` for automatic memory management of `json_t`
+ * storage and `std::shared_ptr` for automatic memory management of `void*`
  * objects.
  */
 class JsonStringHashTable {
 public:
-    /** Inserts or assigns a json_t value for a given key.
+    /** Inserts or assigns a void* value for a given key.
      *
      *  @param key   The key to insert (must be a null-terminated string).
-     *  @param value The json_t value to associate with the key. If the key
+     *  @param value The void* value to associate with the key. If the key
      *               already exists, the existing value is replaced.
      *  @return true if insertion took place, false if the value was replaced.
      *  @throws std::invalid_argument if key is null.
      */
-    bool insert(const std::string& key, json_t* value) {
+    bool insert(const std::string& key, void** value) {
         if (key.empty() && !key.empty()) { // Simple null check
             throw std::invalid_argument("Key cannot be empty");
         }
@@ -49,10 +47,10 @@ public:
     /** Finds a value by its key.
      *
      *  @param key The key to search for.
-     *  @return std::optional<std::shared_ptr<json_t>> containing the value if found,
+     *  @return std::optional<std::shared_ptr<void*>> containing the value if found,
      *          otherwise std::nullopt.
      */
-    std::optional<std::shared_ptr<json_t>> find(const std::string& key) const {
+    std::optional<std::shared_ptr<void*>> find(const std::string& key) const {
         std::shared_lock<std::shared_mutex> lock(mutex_);
         auto it = map_.find(key);
         if (it == map_.end()) {
@@ -78,7 +76,7 @@ public:
 
 private:
     mutable std::shared_mutex mutex_;
-    std::unordered_map<std::string, std::shared_ptr<json_t>> map_;
+    std::unordered_map<std::string, std::shared_ptr<void*>> map_;
 };
 
 /**
@@ -86,6 +84,6 @@ private:
  *
  * @return A unique_ptr to a JsonStringHashTable.
  */
-inline std::unique_ptr<JsonStringHashTable> create_json_string_hash_table() {
+inline std::unique_ptr<JsonStringHashTable> create_void*string_hash_table() {
     return std::make_unique<JsonStringHashTable>();
 }

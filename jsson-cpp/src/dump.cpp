@@ -83,6 +83,9 @@ private:
             return result;
         }
 
+        /**
+         * @brief Dump the contents of a JSON object.
+         */
         void dumpObject(const JsonObject::Map& map, std::ostream& out) const {
             out << '{';
             bool first = true;
@@ -90,25 +93,29 @@ private:
                 if (!first) out << ", ";
                 first = false;
                 out << '"' << escape(kv.first) << "\": ";
-                dump(std::shared_ptr<JsonValue>(kv.second), out);
+                dumpValue(kv.second, out);
             }
             out << '}';
         }
 
+        /**
+         * @brief Dump the contents of a JSON array.
+         */
         void dumpArray(const JsonArray::Vec& vec, std::ostream& out) const {
             out << '[';
             for (size_t i = 0; i < vec.size(); ++i) {
                 if (i) out << ", ";
-                dump(std::shared_ptr<JsonValue>(vec[i]), out);
+                dumpValue(vec[i], out);
             }
             out << ']';
         }
+
     };
 
     /**
      * @brief Recursively dump a JSON value using the visitor.
      */
-    void dumpValue(const std::shared_ptr<JsonValue>& value, std::ostream& out) const {
+    static void dumpValue(const std::shared_ptr<JsonValue>& value, std::ostream& out) {
         DumpVisitor visitor(out);
         std::visit(visitor, value->raw_variant());
     }

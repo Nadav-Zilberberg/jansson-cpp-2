@@ -12,9 +12,15 @@ add_compile_options(-Wall -Wextra -pedantic)
 # Add subdirectory containing the C++ implementation
 add_subdirectory(jsson-cpp)
 
+# Build the example program
+add_executable(example examples/example.cpp)
+target_link_libraries(example jsson_cpp)
+target_include_directories(example PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/jsson-cpp/include)
+set_target_properties(example PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/examples)
+
 # Installation rules for the library and headers
-install(TARGETS jsson-cpp
-        EXPORT jsson-cpp-targets
+install(TARGETS jsson_cpp
+        EXPORT jsson_cpp-targets
         ARCHIVE DESTINATION lib
         LIBRARY DESTINATION lib
         RUNTIME DESTINATION bin)
@@ -24,7 +30,7 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/jsson-cpp/include/*.hpp
 
 # Export target for finding the package
 include(CMakePackageConfigHelpers)
-install(EXPORT jsson-cpp-targets
-        FILE jsson-cpp-targets.cmake
+install(EXPORT jsson_cpp-targets
+        FILE jsson_cpp-targets.cmake
         NAMESPACE jsson::
         DESTINATION lib/cmake/jsson-cpp)
