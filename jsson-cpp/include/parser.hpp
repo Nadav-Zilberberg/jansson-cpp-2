@@ -6,7 +6,7 @@
 #include <stdexcept>
 #include <string_view>
 #include "json_value.hpp"
-
+namespace jsson {
 class Parser {
 public:
     /**
@@ -17,7 +17,7 @@ public:
      */
     static std::shared_ptr<JsonValue> parse(const std::string& filename);
 
-private:
+public:
     // Helper functions for parsing
     static void skipWhitespace(std::string_view& view);
     static std::shared_ptr<JsonValue> parseValue(std::string_view& view);
@@ -27,5 +27,6 @@ private:
     static std::shared_ptr<JsonValue> parseLiteral(std::string_view& view);
     static std::shared_ptr<JsonValue> parseNumber(std::string_view& view);
 };
+}
 
 #endif // PARSER_HPP

@@ -43,7 +43,7 @@ Buffer PackUnpack::pack(BinaryType type, T&& value) {
     
     switch (type) {
         case BinaryType::Integer: {
-            detail::append_to_buffer(buffer, static_cast<json_int_t>(value));
+            detail::append_to_buffer(buffer, static_cast<long>(value));
             break;
         }
         case BinaryType::Real: {
@@ -92,7 +92,7 @@ T PackUnpack::unpack(const Buffer& buffer, size_t& pos) {
     
     switch (type) {
         case BinaryType::Integer: {
-            return detail::read_from_buffer<json_int_t>(buffer, pos);
+            return detail::read_from_buffer<long>(buffer, pos);
         }
         case BinaryType::Real: {
             return detail::read_from_buffer<double>(buffer, pos);
