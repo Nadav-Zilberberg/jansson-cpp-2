@@ -40,6 +40,7 @@ public:
 
 private:
     std::string buffer_;
+    int size_;
 
     void ensure_capacity(size_t min_capacity);
 };

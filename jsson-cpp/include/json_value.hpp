@@ -10,6 +10,8 @@
 #include <stdexcept>
 #include <optional>
 
+namespace jsson {
+
 /* Forward declarations */
 class JsonObject;
 class JsonArray;
@@ -215,5 +217,6 @@ public:
 private:
     Vec data_;
 };
+}
 
 #endif // JSON_VALUE_HPP

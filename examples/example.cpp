@@ -1,4 +1,3 @@
-#!/usr/bin/env cpp
 /**
  * @file example.cpp
  * @brief Demonstrates usage of the modern C++ jsson-cpp library.
@@ -24,31 +23,25 @@
 #include <iomanip>
 
 // jsson-cpp headers
-#include "jsson-cpp/json_value.hpp"
-#include "jsson-cpp/pack_unpack.hpp"
-#include "jsson-cpp/error.hpp"
-#include "jsson-cpp/hashtable.hpp"
-#include "jsson-cpp/memory.hpp"
-#include "jsson-cpp/strbuffer.hpp"
-#include "jsson-cpp/dump.hpp"
-#include "jsson-cpp/parser.hpp"
-#include "jsson-cpp/dtoa.hpp"
-#include "jsson-cpp/utf8.hpp"
+#include "json_value.hpp"
+#include "pack_unpack.hpp"
+#include "error.hpp"
+#include "memory.hpp"
+#include "strbuffer.hpp"
+#include "dump.hpp"
+#include "parser.hpp"
+#include "dtoa.hpp"
+#include "utf8.hpp"
 
-using jsson::json_value::JsonValue;
-using jsson::json_value::JsonObject;
-using jsson::json_value::JsonArray;
-using jsson::json_value::JsonNumber;
-using jsson::json_value::JsonString;
-using jsson::json_value::JsonBoolean;
-using jsson::json_value::JsonNull;
+using jsson::JsonValue;
+using jsson::JsonObject;
+using jsson::JsonArray;
 using jsson::memory::Allocator;
-using jsson::pack_unpack::PackUnpack;
-using jsson::error::JsonError;
-using jsson::hashtable::JsonStringHashTable;
-using jsson::dump::JsonDumper;
-using jsson::parser::Parser;
-using jsson::dtoa::Dtoa;
+using jsson::PackUnpack;
+using jsson::JsonError;
+using jsson::JsonDumper;
+using jsson::Parser;
+using jsson::Dtoa;
 
 /**
  * Helper to create a JSON object with some key-value pairs.
@@ -150,23 +143,6 @@ void demonstrate_pack_unpack() {
     // Unpack it back to a JSON value
     JsonValue unpacked = PackUnpack::unpack(packed);
     std::cout << "Unpacked value: " << unpacked << "\n";
-}
-
-/**
- * Demonstrate hashtable usage.
- */
-void demonstrate_hashtable() {
-    std::cout << "\n=== Hashtable demonstration ===\n";
-
-    JsonStringHashTable table;
-    auto obj = create_test_object();
-
-    // Insert key-value pairs into the hashtable via JsonValue's object storage
-    for (const auto& [key, value] : obj) {
-        table.insert(key, value.get()); // Simplified usage for demo
-    }
-
-    std::cout << "Hashtable size: " << table.size() << "\n";
 }
 
 /**

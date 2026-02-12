@@ -6,7 +6,7 @@
 #include <ostream>
 #include "json_value.hpp"
 
-namespace dump {
+namespace jsson {
 
 /**
  * @brief Class for dumping JSON values to output streams.
