@@ -7,7 +7,7 @@
 #include <filesystem>
 #include <algorithm>
 
-namespace fs = std::filesystem;
+using namespace jsson;
 
 /* Helper to read entire file into a string using std::getline */
 static std::string readFile(const std::string& filename) {
@@ -26,7 +26,7 @@ static std::string readFile(const std::string& filename) {
 }
 
 /* Skip whitespace characters */
-void Parser::Parser::skipWhitespace(std::string_view& view) {
+void Parser::skipWhitespace(std::string_view& view) {
     view.remove_prefix(std::distance(view.begin(), std::find_if(view.begin(), view.end(), [](unsigned char ch) {
         return !std::isspace(ch);
     })));

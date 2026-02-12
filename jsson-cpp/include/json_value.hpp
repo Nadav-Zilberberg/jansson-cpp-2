@@ -51,6 +51,9 @@ public:
     // Integer (int64_t)
     explicit JsonValue(int64_t value) : type_(Type::Number), data_(value) {}
 
+    // Integer (int)
+    explicit JsonValue(int value) : type_(Type::Number), data_(value) {}
+
     // String (copy)
     explicit JsonValue(const std::string& value) : type_(Type::String), data_(value) {}
 
@@ -172,24 +175,100 @@ public:
     using Map = std::unordered_map<std::string, std::shared_ptr<JsonValue>>;
 
     JsonObject() = default;
-    explicit JsonObject(const Map& map) : data_(map) {}
-    explicit JsonObject(Map&& map) : data_(std::move(map)) {}
 
-    /** @return Reference to the value associated with @p key. */
-    JsonValue& operator[](const std::string& key);
+    explicit JsonObject(const Map& map)
+        : data_(map) {}
 
-    /** @return Const reference to the value associated with @p key. */
-    const JsonValue& operator[](const std::string& key) const;
+    explicit JsonObject(Map&& map)
+        : data_(std::move(map)) {}
+
+    // initializer_list constructor
+    JsonObject(std::initializer_list<std::pair<std::string, JsonValue>> init) {
+        for (const auto& [key, value] : init) {
+            data_.emplace(
+                key,
+                std::make_shared<JsonValue>(value)
+            );
+        }
+    }
+
+    /** Access (inserts if missing) */
+    JsonValue& operator[](const std::string& key) {
+        auto& ptr = data_[key];
+        if (!ptr) {
+            ptr = std::make_shared<JsonValue>();
+        }
+        return *ptr;
+    }
+
+    /** Const access (throws if missing) */
+    const JsonValue& operator[](const std::string& key) const {
+        return *data_.at(key);
+    }
+
+    /** Bounds-checked access */
+    JsonValue& at(const std::string& key) {
+        return *data_.at(key);
+    }
+
+    const JsonValue& at(const std::string& key) const {
+        return *data_.at(key);
+    }
+
+    /** Insert helpers */
+    void insert(const std::string& key, const JsonValue& value) {
+        data_[key] = std::make_shared<JsonValue>(value);
+    }
+
+    void insert(std::string&& key, JsonValue&& value) {
+        data_[std::move(key)] =
+            std::make_shared<JsonValue>(std::move(value));
+    }
+
+    template <typename... Args>
+    JsonValue& emplace(const std::string& key, Args&&... args) {
+        auto ptr = std::make_shared<JsonValue>(
+            std::forward<Args>(args)...
+        );
+        data_[key] = ptr;
+        return *ptr;
+    }
+
+    /** Erase */
+    bool erase(const std::string& key) {
+        return data_.erase(key) > 0;
+    }
+
+    /** Lookup helpers */
+    bool contains(const std::string& key) const {
+        return data_.find(key) != data_.end();
+    }
+
+    /** Size helpers */
+    size_t size() const noexcept {
+        return data_.size();
+    }
+
+    bool empty() const noexcept {
+        return data_.empty();
+    }
+
+    /** Iteration */
+    auto begin() { return data_.begin(); }
+    auto end() { return data_.end(); }
+    auto begin() const { return data_.begin(); }
+    auto end() const { return data_.end(); }
 
     /** @return The underlying map (for iteration). */
-    Map& keys();
+    Map& keys() { return data_; }
 
     /** @return The underlying map (const). */
-    const Map& keys() const;
+    const Map& keys() const { return data_; }
 
 private:
     Map data_;
 };
+
 
 /*=====================================================================
  *  JsonArray Declaration
@@ -200,23 +279,79 @@ public:
     using Vec = std::vector<std::shared_ptr<JsonValue>>;
 
     JsonArray() = default;
-    explicit JsonArray(Vec&& vec) : data_(std::move(vec)) {}
+
+    explicit JsonArray(Vec&& vec)
+        : data_(std::move(vec)) {}
+
+    // initializer_list constructor
+    JsonArray(std::initializer_list<JsonValue> init) {
+        data_.reserve(init.size());
+        for (const auto& v : init) {
+            data_.push_back(std::make_shared<JsonValue>(v));
+        }
+    }
 
     /** @return Reference to the element at @p index. */
-    JsonValue& operator[](size_t index);
+    JsonValue& operator[](size_t index) {
+        return *data_[index];
+    }
 
     /** @return Const reference to the element at @p index. */
-    const JsonValue& operator[](size_t index) const;
+    const JsonValue& operator[](size_t index) const {
+        return *data_[index];
+    }
+
+    /** Bounds-checked access */
+    JsonValue& at(size_t index) {
+        return *data_.at(index);
+    }
+
+    const JsonValue& at(size_t index) const {
+        return *data_.at(index);
+    }
+
+    /** Add elements */
+    void push_back(const JsonValue& value) {
+        data_.push_back(std::make_shared<JsonValue>(value));
+    }
+
+    void push_back(JsonValue&& value) {
+        data_.push_back(std::make_shared<JsonValue>(std::move(value)));
+    }
+
+    template <typename... Args>
+    JsonValue& emplace_back(Args&&... args) {
+        data_.push_back(
+            std::make_shared<JsonValue>(std::forward<Args>(args)...)
+        );
+        return *data_.back();
+    }
+
+    /** Size helpers */
+    size_t size() const noexcept {
+        return data_.size();
+    }
+
+    bool empty() const noexcept {
+        return data_.empty();
+    }
+
+    /** Iteration support */
+    auto begin() { return data_.begin(); }
+    auto end() { return data_.end(); }
+    auto begin() const { return data_.begin(); }
+    auto end() const { return data_.end(); }
 
     /** @return The underlying vector (for iteration). */
-    Vec& data();
+    Vec& data() { return data_; }
 
     /** @return The underlying vector (const). */
-    const Vec& data() const;
+    const Vec& data() const { return data_; }
 
 private:
     Vec data_;
 };
+
 }
 
 #endif // JSON_VALUE_HPP

@@ -5,6 +5,8 @@
 #include <cstddef>
 #include <algorithm>
 
+namespace jsson {
+
 class StringBuffer {
 public:
     explicit StringBuffer(size_t initial_size = 16);
@@ -44,5 +46,8 @@ private:
 
     void ensure_capacity(size_t min_capacity);
 };
+
+}
+
 
 #endif // JSSON_STRBUFFER_HPP

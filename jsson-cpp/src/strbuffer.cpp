@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <cstring>
 
+using namespace jsson;
+
 StringBuffer::StringBuffer(size_t initial_size)
     : buffer_(), size_(0) {
     if (initial_size > 0) {
