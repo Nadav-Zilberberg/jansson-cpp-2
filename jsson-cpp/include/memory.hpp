@@ -65,9 +65,13 @@ public:
      */
     static std::unique_ptr<void, decltype(&std::free)> aligned_alloc(std::size_t alignment,
                                                                    std::size_t size) noexcept;
+    template <typename T>
+    static std::unique_ptr<T> make_unique(std::size_t count) noexcept;
 };
 
 } // namespace memory
 } // namespace jsson
 
+    template <typename T>
+    static std::unique_ptr<T> make_unique(std::size_t count) noexcept;
 #endif // JSSON_MEMORY_HPP
