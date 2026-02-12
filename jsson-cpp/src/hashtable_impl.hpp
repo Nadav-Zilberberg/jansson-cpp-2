@@ -1,6 +1,10 @@
 #ifndef JSSON_CPP_HASHTABLE_IMPL_HPP
 #define JSSON_CPP_HASHTABLE_IMPL_HPP
 
+#include <mutex>
+#include <shared_mutex>
+#include <optional>
+
 template <typename K, typename V>
 bool HashTable<K, V>::insert(const K& key, const V& value) {
     std::unique_lock<std::shared_mutex> lock(mutex_);

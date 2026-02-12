@@ -1,6 +1,7 @@
 #include "hashtable.hpp"
 #include <stdexcept>
 #include <string>
+#include <memory>
 
 /**
  * @brief Concrete hash table implementation for JSON strings and void* values.
@@ -84,6 +85,6 @@ private:
  *
  * @return A unique_ptr to a JsonStringHashTable.
  */
-inline std::unique_ptr<JsonStringHashTable> create_void*string_hash_table() {
+inline std::unique_ptr<JsonStringHashTable> create_json_string_hash_table() {
     return std::make_unique<JsonStringHashTable>();
 }

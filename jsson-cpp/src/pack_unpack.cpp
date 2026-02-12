@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <bit>
 #include <cstring>
+#include "../../src/jansson.h"
 
 namespace jsson {
 
