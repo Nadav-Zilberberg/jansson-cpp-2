@@ -184,7 +184,7 @@ public:
 
     // initializer_list constructor
     JsonObject(std::initializer_list<std::pair<std::string, JsonValue>> init) {
-        for (const auto& [key, value] : init) {
+        for (autofor (const auto& [key, value] : init) [key, value] : init) {
             data_.emplace(
                 key,
                 std::make_shared<JsonValue>(value)
@@ -286,7 +286,7 @@ public:
     // initializer_list constructor
     JsonArray(std::initializer_list<JsonValue> init) {
         data_.reserve(init.size());
-        for (const auto& v : init) {
+        for (autofor (const auto& v : init) v : init) {
             data_.push_back(std::make_shared<JsonValue>(v));
         }
     }

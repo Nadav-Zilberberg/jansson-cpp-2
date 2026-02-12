@@ -29,7 +29,7 @@ public:
      * @param value The JSON value to dump.
      * @param out   The output stream to write to.
      */
-    void dump(const std::shared_ptr<JsonValue>& value, std::ostream& out) const {
+    void dump(const std::shared_ptr<jsson::JsonValue>& value, std::ostream& out) const {
         dumpValue(value, out);
     }
 
@@ -65,11 +65,11 @@ private:
             out << '"' << escape(s) << '"';
         }
 
-        void operator()(const std::unique_ptr<JsonObject>& obj) const {
+        void operator()(const std::unique_ptr<jsson::JsonObject>& obj) const {
             dumpObject(obj->keys(), out);
         }
 
-        void operator()(const std::unique_ptr<JsonArray>& arr) const {
+        void operator()(const std::unique_ptr<jsson::JsonArray>& arr) const {
             dumpArray(arr->data(), out);
         }
 
@@ -86,7 +86,7 @@ private:
         /**
          * @brief Dump the contents of a JSON object.
          */
-        void dumpObject(const JsonObject::Map& map, std::ostream& out) const {
+        void dumpObject(const jsson::JsonObject::Map& map, std::ostream& out) const {
             out << '{';
             bool first = true;
             for (const auto& kv : map) {
@@ -101,7 +101,7 @@ private:
         /**
          * @brief Dump the contents of a JSON array.
          */
-        void dumpArray(const JsonArray::Vec& vec, std::ostream& out) const {
+        void dumpArray(const jsson::JsonArray::Vec& vec, std::ostream& out) const {
             out << '[';
             for (size_t i = 0; i < vec.size(); ++i) {
                 if (i) out << ", ";
@@ -115,7 +115,7 @@ private:
     /**
      * @brief Recursively dump a JSON value using the visitor.
      */
-    static void dumpValue(const std::shared_ptr<JsonValue>& value, std::ostream& out) {
+    static void dumpValue(const std::shared_ptr<jsson::JsonValue>& value, std::ostream& out) {
         DumpVisitor visitor(out);
         std::visit(visitor, value->raw_variant());
     }
