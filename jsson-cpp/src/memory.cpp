@@ -3,6 +3,8 @@
 #include <cstddef>
 #include <memory>
 #include <type_traits>
+#include <bit>
+#include <type_traits>
 #include <new> // for std::bad_alloc
 
 namespace jsson {

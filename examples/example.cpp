@@ -27,7 +27,7 @@
 #include "jsson-cpp/json_value.hpp"
 #include "jsson-cpp/pack_unpack.hpp"
 #include "jsson-cpp/error.hpp"
-#include "jsson-cpp/hashtable.hpp"
+#include "jsson.hpp"
 #include "jsson-cpp/memory.hpp"
 #include "jsson-cpp/strbuffer.hpp"
 #include "jsson-cpp/dump.hpp"
