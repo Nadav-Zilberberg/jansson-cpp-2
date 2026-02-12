@@ -21,6 +21,9 @@ target_compile_options(jsson_cpp PUBLIC -Wall -Wextra -pedantic)
 file(GLOB JANSSON_CPP_SRC src/*.cpp)
 target_sources(jsson_cpp PRIVATE ${JANSSON_CPP_SRC})
 
+# Add src directory to include path
+target_include_directories(jsson_cpp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
 # Install target
 install(TARGETS jsson_cpp
     ARCHIVE DESTINATION lib
