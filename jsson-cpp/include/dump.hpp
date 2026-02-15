@@ -37,4 +37,66 @@ private:
 
 } // namespace dump
 
+/**
+ * @brief Serialize a JSON value to an output stream.
+ *
+ * This operator provides a human-readable representation of a JSON value.
+ *
+ * @param out The output stream.
+ * @param value The JSON value to serialize.
+ * @return The output stream reference.
+ */
+inline std::ostream& operator<<(std::ostream& out, const std::shared_ptr<JsonValue>& value) {
+    JsonDumper dumper;
+    dumper.dump(value, out);
+    return out;
+}
+
+/**
+ * @brief Serialize a JSON value to an output stream.
+ *
+ * This operator provides a human-readable representation of a JSON value.
+ *
+ * @param out The output stream.
+ * @param value The JSON value to serialize.
+ * @return The output stream reference.
+ */
+inline std::ostream& operator<<(std::ostream& out, const JsonValue& value) {
+    JsonDumper dumper;
+    dumper.dump(std::make_shared<const JsonValue>(value), out);
+    return out;
+}
+
+/**
+ * @brief Serialize a JSON object to an output stream.
+ *
+ * This operator provides a human-readable representation of a JSON object.
+ *
+ * @param out The output stream.
+ * @param obj The JSON object to serialize.
+ * @return The output stream reference.
+ */
+inline std::ostream& operator<<(std::ostream& out, const JsonObject& obj) {
+    JsonDumper dumper;
+    dumper.dump(std::make_shared<const JsonObject>(obj), out);
+    return out;
+}
+
+/**
+ * @brief Serialize a JSON array to an output stream.
+ *
+ * This operator provides a human-readable representation of a JSON array.
+ *
+ * @param out The output stream.
+ * @param arr The JSON array to serialize.
+ * @return The output stream reference.
+ */
+inline std::ostream& operator<<(std::ostream& out, const JsonArray& arr) {
+    JsonDumper dumper;
+    dumper.dump(std::make_shared<const JsonArray>(arr), out);
+    return out;
+}
+
+#endif // DUMP_HPP
+
 #endif // DUMP_HPP

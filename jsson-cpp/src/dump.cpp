@@ -15,6 +15,10 @@
 
 namespace dump {
 
+using jsson::JsonValue;
+using jsson::JsonObject;
+using jsson::JsonArray;
+
 /**
  * @brief Class for dumping JSON values to output streams.
  *
@@ -86,7 +90,7 @@ private:
         /**
          * @brief Dump the contents of a JSON object.
          */
-        void dumpObject(const JsonObject::Map& map, std::ostream& out) const {
+        void dumpObject(const jsson::JsonObject::Map& map, std::ostream& out) const {
             out << '{';
             bool first = true;
             for (const auto& kv : map) {
@@ -101,7 +105,7 @@ private:
         /**
          * @brief Dump the contents of a JSON array.
          */
-        void dumpArray(const JsonArray::Vec& vec, std::ostream& out) const {
+        void dumpArray(const jsson::JsonArray::Vec& vec, std::ostream& out) const {
             out << '[';
             for (size_t i = 0; i < vec.size(); ++i) {
                 if (i) out << ", ";
@@ -115,7 +119,7 @@ private:
     /**
      * @brief Recursively dump a JSON value using the visitor.
      */
-    static void dumpValue(const std::shared_ptr<JsonValue>& value, std::ostream& out) {
+    static void dumpValue(const std::shared_ptr<jsson::JsonValue>& value, std::ostream& out) {
         DumpVisitor visitor(out);
         std::visit(visitor, value->raw_variant());
     }

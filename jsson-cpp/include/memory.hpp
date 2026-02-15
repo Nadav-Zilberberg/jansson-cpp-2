@@ -33,20 +33,26 @@ public:
      * @return std::unique_ptr<T[]> owning the allocated array.
      */
     template <typename T>
-    static std::unique_ptr<T[]> make_unique_array(std::size_t count) noexcept;
+    static std::unique_ptr<T[]> make_unique_array(std::size_t count) noexcept {
+        return std::make_unique<T[]>(count);
+    }
 
     /**
      * @brief Wrapper around std::malloc that uses RAII.
      * @param size Number of bytes to allocate.
      * @return std::unique_ptr<void, decltype(&std::free)> owning the allocated block.
      */
-    static std::unique_ptr<void, decltype(&std::free)> malloc(std::size_t size) noexcept;
+    static std::unique_ptr<void, decltype(&std::free)> malloc(std::size_t size) noexcept {
+        return std::unique_ptr<void, decltype(&std::free)>(std::malloc(size));
+    }
 
     /**
      * @brief Wrapper around std::free.
      * @param ptr Pointer to deallocate.
      */
-    static void free(std::unique_ptr<void, decltype(&std::free)>& ptr) noexcept;
+    static void free(std::unique_ptr<void, decltype(&std::free)>& ptr) noexcept {
+        std::free(ptr.release());
+    }
 
     /**
      * @brief Wrapper around std::realloc.
@@ -55,7 +61,9 @@ public:
      * @return std::unique_ptr<void, decltype(&std::free)> owning the reallocated block.
      */
     static std::unique_ptr<void, decltype(&std::free)> realloc(std::unique_ptr<void, decltype(&std::free)>& ptr,
-                                                              std::size_t new_size) noexcept;
+                                                              std::size_t new_size) noexcept {
+        return std::unique_ptr<void, decltype(&std::free)>(std::realloc(ptr.release(), new_size));
+    }
 
     /**
      * @brief Allocate a block of memory with the given size and alignment.
@@ -64,7 +72,9 @@ public:
      * @return std::unique_ptr<void, decltype(&std::free)> owning the allocated block.
      */
     static std::unique_ptr<void, decltype(&std::free)> aligned_alloc(std::size_t alignment,
-                                                                   std::size_t size) noexcept;
+                                                                   std::size_t size) noexcept {
+        return std::unique_ptr<void, decltype(&std::free)>(std::aligned_alloc(alignment, size));
+    }
 };
 
 } // namespace memory

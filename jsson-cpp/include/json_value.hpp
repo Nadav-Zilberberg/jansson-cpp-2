@@ -182,15 +182,8 @@ public:
     explicit JsonObject(Map&& map)
         : data_(std::move(map)) {}
 
-    // initializer_list constructor
-    JsonObject(std::initializer_list<std::pair<std::string, JsonValue>> init) {
-        for (const auto& [key, value] : init) {
-            data_.emplace(
-                key,
-                std::make_shared<JsonValue>(value)
-            );
-        }
-    }
+    // initializer_list constructor - deleted to avoid copying JsonValue
+    JsonObject(std::initializer_list<std::pair<std::string, JsonValue>>) = delete;
 
     /** Access (inserts if missing) */
     JsonValue& operator[](const std::string& key) {
@@ -216,8 +209,8 @@ public:
     }
 
     /** Insert helpers */
-    void insert(const std::string& key, const JsonValue& value) {
-        data_[key] = std::make_shared<JsonValue>(value);
+    void insert(const std::string& key, JsonValue&& value) {
+        data_[key] = std::make_shared<JsonValue>(std::move(value));
     }
 
     void insert(std::string&& key, JsonValue&& value) {
