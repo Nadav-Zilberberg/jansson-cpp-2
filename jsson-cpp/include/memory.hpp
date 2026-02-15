@@ -43,7 +43,7 @@ public:
      * @return std::unique_ptr<void, decltype(&std::free)> owning the allocated block.
      */
     static std::unique_ptr<void, decltype(&std::free)> malloc(std::size_t size) noexcept {
-        return std::unique_ptr<void, decltype(&std::free)>(std::malloc(size));
+        return std::unique_ptr<void, decltype(&std::free)>(std::malloc(size), &std::free);
     }
 
     /**

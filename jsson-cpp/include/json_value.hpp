@@ -72,69 +72,10 @@ public:
     // Array (move)
     explicit JsonValue(JsonArray&& array) : type_(Type::Array), data_(std::make_unique<JsonArray>(std::move(const_cast<JsonArray&>(array)))) {}
 
-    /** @brief Copy constructor.
-     *
-     *  This constructor creates a copy of a JsonValue. Note that because the
-     *  internal representation uses `std::unique_ptr` for objects and arrays,
-     *  the copy performs a deep copy of the contained data.
-     */
-    JsonValue(const JsonValue& other) : type_(other.type_) {
-        switch (type_) {
-            case Type::Null:
-                // Nothing to copy.
-                break;
-            case Type::Boolean:
-                data_ = other.data_;
-                break;
-            case Type::Number:
-                data_ = other.data_;
-                break;
-            case Type::String:
-                data_ = other.data_;
-                break;
-            case Type::Object:
-                data_ = std::make_unique<JsonObject>(*std::get<std::unique_ptr<JsonObject>>(other.data_));
-                break;
-            case Type::Array:
-                data_ = std::make_unique<JsonArray>(*std::get<std::unique_ptr<JsonArray>>(other.data_));
-                break;
-        }
-    }
-
-    /** @brief Copy assignment operator.
-     *
-     *  This operator assigns a JsonValue to another JsonValue, performing a
-     *  deep copy of the contained data.
-     */
-    JsonValue& operator=(const JsonValue& other) {
-        if (this != &other) {
-            // Reset current data_
-            data_ = std::variant<std::monostate, bool, double, int64_t, std::string,
-                                 std::unique_ptr<JsonObject>, std::unique_ptr<JsonArray>>{};
-            type_ = other.type_;
-            switch (type_) {
-                case Type::Null:
-                    // Nothing to copy.
-                    break;
-                case Type::Boolean:
-                    data_ = other.data_;
-                    break;
-                case Type::Number:
-                    data_ = other.data_;
-                    break;
-                case Type::String:
-                    data_ = other.data_;
-                    break;
-                case Type::Object:
-                    data_ = std::make_unique<JsonObject>(*std::get<std::unique_ptr<JsonObject>>(other.data_));
-                    break;
-                case Type::Array:
-                    data_ = std::make_unique<JsonArray>(*std::get<std::unique_ptr<JsonArray>>(other.data_));
-                    break;
-            }
-        }
-        return *this;
-    }
+    // Disallow copying of JsonValue to avoid issues with std::variant containing
+    // non-copyable types like std::unique_ptr. Use move semantics instead.
+    JsonValue(const JsonValue&) = delete;
+    JsonValue& operator=(const JsonValue&) = delete;
 
     // Move operations (defaulted)
     JsonValue(JsonValue&&) = default;

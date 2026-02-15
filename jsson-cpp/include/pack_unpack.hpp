@@ -7,7 +7,7 @@
 #include <bit>
 #include <string>
 #include <type_traits>
-#include <shared_ptr>
+#include <memory>
 #include "json_value.hpp"
 
 namespace jsson {
