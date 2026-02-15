@@ -109,13 +109,13 @@ void demonstrate_parse_and_dump() {
 
     // Parse using the Parser class (load.cpp functionality)
     Parser parser;
-    std::shared_ptr<JsonValue> parsed = parser.parse(hard_coded_json);
+    std::shared_ptr<JsonValue> parsed = parser.parseValue(std::string_view(hard_coded_json));
 
     // Convert parsed JSON back to a string using dump.cpp
-    std::ostream dumped = "";
+    std::ostringstream dumped;
     JsonDumper dumper;
     dumper.dump(parsed, dumped);
-    std::cout << "Dumped JSON: " << dumped << "\n";
+    std::cout << "Dumped JSON: " << dumped.str() << "\n";
 
     // Also demonstrate using the dump helper function directly
 }
@@ -131,7 +131,7 @@ void demonstrate_errors() {
 
     try {
         Parser parser;
-        std::shared_ptr<JsonValue> parsed = parser.parse(invalid_json);
+        std::shared_ptr<JsonValue> parsed = parser.parseValue(std::string_view(invalid_json));
     } catch (const JsonError& e) {
         std::cout << "Caught JsonError: " << e.what() << ")\n";
     }
@@ -162,7 +162,7 @@ void demonstrate_memory() {
 
     // Use StrBuffer to build a message
     jsson::StringBuffer sb;
-    sb.append("Memory allocation demo completed");
+    sb.append("Memory allocation demo completed", 30);
     std::cout << sb.str() << "\n";
 }
 

@@ -19,13 +19,13 @@ public:
 
 public:
     // Helper functions for parsing
-    static void skipWhitespace(std::string_view& view);
-    static std::shared_ptr<JsonValue> parseValue(std::string_view& view);
-    static std::shared_ptr<JsonValue> parseObject(std::string_view& view);
-    static std::shared_ptr<JsonValue> parseArray(std::string_view& view);
-    static std::shared_ptr<JsonValue> parseString(std::string_view& view);
-    static std::shared_ptr<JsonValue> parseLiteral(std::string_view& view);
-    static std::shared_ptr<JsonValue> parseNumber(std::string_view& view);
+    static void skipWhitespace(std::string_view view);
+    static std::shared_ptr<JsonValue> parseValue(std::string_view view);
+    static std::shared_ptr<JsonValue> parseObject(std::string_view view);
+    static std::shared_ptr<JsonValue> parseArray(std::string_view view);
+    static std::shared_ptr<JsonValue> parseString(std::string_view view);
+    static std::shared_ptr<JsonValue> parseLiteral(std::string_view view);
+    static std::shared_ptr<JsonValue> parseNumber(std::string_view view);
 };
 }
 

@@ -7,7 +7,7 @@
 #include <filesystem>
 #include <algorithm>
 
-using namespace jsson;
+namespace jsson {
 
 /* Helper to read entire file into a string using std::getline */
 static std::string readFile(const std::string& filename) {
@@ -26,14 +26,14 @@ static std::string readFile(const std::string& filename) {
 }
 
 /* Skip whitespace characters */
-void Parser::skipWhitespace(std::string_view& view) {
+void Parser::skipWhitespace(std::string_view view) {
     view.remove_prefix(std::distance(view.begin(), std::find_if(view.begin(), view.end(), [](unsigned char ch) {
         return !std::isspace(ch);
     })));
 }
 
 /* Parse a JSON literal (true, false, null) */
-static std::shared_ptr<JsonValue> parseLiteral(std::string_view& view) {
+static std::shared_ptr<JsonValue> parseLiteral(std::string_view view) {
     Parser::skipWhitespace(view);
 
     if (view.substr(0, 4) == "true") {
@@ -51,7 +51,7 @@ static std::shared_ptr<JsonValue> parseLiteral(std::string_view& view) {
 }
 
 /* Parse a JSON number (integer or double) */
-static std::shared_ptr<JsonValue> parseNumber(std::string_view& view) {
+static std::shared_ptr<JsonValue> parseNumber(std::string_view view) {
     Parser::skipWhitespace(view);
     size_t start = view.size();
 
@@ -106,7 +106,7 @@ static std::shared_ptr<JsonValue> parseNumber(std::string_view& view) {
 }
 
 /* Parse a JSON string */
-static std::shared_ptr<JsonValue> parseString(std::string_view& view) {
+static std::shared_ptr<JsonValue> parseString(std::string_view view) {
     Parser::skipWhitespace(view);
     if (view.empty() || view.front() != '"') {
         throw std::runtime_error("Expected string literal");
@@ -180,7 +180,7 @@ static std::shared_ptr<JsonValue> parseString(std::string_view& view) {
 }
 
 /* Parse a JSON object */
-static std::shared_ptr<JsonValue> parseObject(std::string_view& view) {
+static std::shared_ptr<JsonValue> parseObject(std::string_view view) {
     Parser::skipWhitespace(view);
     if (view.empty() || view.front() != '{') {
         throw std::runtime_error("Expected object start");
@@ -228,7 +228,7 @@ static std::shared_ptr<JsonValue> parseObject(std::string_view& view) {
 }
 
 /* Parse a JSON array */
-static std::shared_ptr<JsonValue> parseArray(std::string_view& view) {
+static std::shared_ptr<JsonValue> parseArray(std::string_view view) {
     Parser::skipWhitespace(view);
     if (view.empty() || view.front() != '[') {
         throw std::runtime_error("Expected array start");
@@ -262,7 +262,7 @@ static std::shared_ptr<JsonValue> parseArray(std::string_view& view) {
 }
 
 /* Parse a JSON value (object, array, literal, string, number) */
-std::shared_ptr<JsonValue> Parser::parseValue(std::string_view& view) {
+std::shared_ptr<JsonValue> Parser::parseValue(std::string_view view) {
     Parser::skipWhitespace(view);
     if (view.empty()) {
         throw std::runtime_error("Unexpected end of input");
@@ -300,4 +300,6 @@ std::shared_ptr<JsonValue> Parser::parse(const std::string& filename) {
     }
 
     return root;
+}
+
 }
