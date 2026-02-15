@@ -13,7 +13,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace dump {
+namespace jsson {
 
 using jsson::JsonValue;
 using jsson::JsonObject;
@@ -125,4 +125,4 @@ private:
     }
 };
 
-} // namespace dump
+} // namespace jsson

@@ -186,10 +186,56 @@ public:
     JsonValue& operator=(int64_t value);
     JsonValue& operator=(const std::string& value);
     JsonValue& operator=(std::string&& value);
-    JsonValue& operator=(const JsonObject& object);
-    JsonValue& operator=(JsonObject&& object);
-    JsonValue& operator=(const JsonArray& array);
-    JsonValue& operator=(JsonArray&& array);
+    JsonValue& operator=(const JsonObject& object) {
+        return assign(object);
+    }
+    
+    JsonValue& operator=(JsonObject&& object) {
+        return assign(std::move(object));
+    }
+    
+    JsonValue& operator=(const JsonArray& array) {
+        return assign(array);
+    }
+    
+    JsonValue& operator=(JsonArray&& array) {
+        return assign(std::move(array));
+    }
+    
+    // Assign from another JsonValue
+    JsonValue& assign(const JsonValue& other) {
+        if (this != &other) {
+            type_ = other.type_;
+            data_.template emplace<decltype(other.type_)>(std::in_place_type<decltype(other.type_)>, other.data_);
+        }
+        return *this;
+    }
+    
+    JsonValue& assign(JsonValue&& other) {
+        if (this != &other) {
+            type_ = other.type_;
+            data_.template emplace<decltype(other.type_)>(std::in_place_type<decltype(other.type_)>, std::move(other.data_));
+        }
+        return *this;
+    }
+    
+    // Assign from JsonObject
+    JsonValue& assign(const JsonObject& object) {
+        return assign(JsonValue(std::in_place_type<std::unique_ptr<JsonObject>>, std::make_unique<JsonObject>(object)));
+    }
+    
+    JsonValue& assign(JsonObject&& object) {
+        return assign(JsonValue(std::in_place_type<std::unique_ptr<JsonObject>>, std::make_unique<JsonObject>(std::move(object))));
+    }
+    
+    // Assign from JsonArray
+    JsonValue& assign(const JsonArray& array) {
+        return assign(JsonValue(std::in_place_type<std::unique_ptr<JsonArray>>, std::make_unique<JsonArray>(array)));
+    }
+    
+    JsonValue& assign(JsonArray&& array) {
+        return assign(JsonValue(std::in_place_type<std::unique_ptr<JsonArray>>, std::make_unique<JsonArray>(std::move(array))));
+    }
 
 
 private:
