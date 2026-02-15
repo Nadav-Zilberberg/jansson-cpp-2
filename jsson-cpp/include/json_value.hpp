@@ -74,7 +74,35 @@ public:
 
     // Disallow copying of JsonValue to avoid issues with std::variant containing
     // non-copyable types like std::unique_ptr. Use move semantics instead.
-    JsonValue(const JsonValue&) = delete;
+    // However, we need a copy constructor for initializer_list usage in JsonArray.
+    // Perform deep copy for composite types.
+    JsonValue(const JsonValue& other) : type_(other.type_) {
+        switch (type_) {
+            case Type::Null:
+                // Nothing to copy
+                break;
+            case Type::Boolean:
+                data_.template emplace<bool>(std::get<bool>(other.data_));
+                break;
+            case Type::Number: {
+                if (std::holds_alternative<double>(other.data_)) {
+                    data_.template emplace<double>(std::get<double>(other.data_));
+                } else if (std::holds_alternative<int64_t>(other.data_)) {
+                    data_.template emplace<int64_t>(std::get<int64_t>(other.data_));
+                }
+                break;
+            }
+            case Type::String:
+                data_.template emplace<std::string>(std::get<std::string>(other.data_));
+                break;
+            case Type::Object:
+                data_.template emplace<std::unique_ptr<JsonObject>>(std::make_unique<JsonObject>(*std::get<std::unique_ptr<JsonObject>>(other.data_)));
+                break;
+            case Type::Array:
+                data_.template emplace<std::unique_ptr<JsonArray>>(std::make_unique<JsonArray>(*std::get<std::unique_ptr<JsonArray>>(other.data_)));
+                break;
+        }
+    }
     JsonValue& operator=(const JsonValue&) = delete;
 
     // Move operations (defaulted)

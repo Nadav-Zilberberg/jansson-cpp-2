@@ -62,7 +62,7 @@ public:
      */
     static std::unique_ptr<void, decltype(&std::free)> realloc(std::unique_ptr<void, decltype(&std::free)>& ptr,
                                                               std::size_t new_size) noexcept {
-        return std::unique_ptr<void, decltype(&std::free)>(std::realloc(ptr.release(), new_size));
+        return std::unique_ptr<void, decltype(&std::free)>(std::realloc(ptr.release(), new_size), &std::free);
     }
 
     /**
@@ -73,7 +73,7 @@ public:
      */
     static std::unique_ptr<void, decltype(&std::free)> aligned_alloc(std::size_t alignment,
                                                                    std::size_t size) noexcept {
-        return std::unique_ptr<void, decltype(&std::free)>(std::aligned_alloc(alignment, size));
+        return std::unique_ptr<void, decltype(&std::free)>(std::aligned_alloc(alignment, size), &std::free);
     }
 };
 

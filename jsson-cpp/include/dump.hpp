@@ -61,9 +61,9 @@ inline std::ostream& operator<<(std::ostream& out, const std::shared_ptr<JsonVal
  * @param value The JSON value to serialize.
  * @return The output stream reference.
  */
-inline std::ostream& operator<<(std::ostream& out, const JsonValue& value) {
+inline std::ostream& operator<<(std::ostream& out, const jsson::JsonValue& value) {
     JsonDumper dumper;
-    dumper.dump(std::make_shared<const JsonValue>(value), out);
+    dumper.dump(std::make_shared<const jsson::JsonValue>(value), out);
     return out;
 }
 
@@ -76,7 +76,7 @@ inline std::ostream& operator<<(std::ostream& out, const JsonValue& value) {
  * @param obj The JSON object to serialize.
  * @return The output stream reference.
  */
-inline std::ostream& operator<<(std::ostream& out, const JsonObject& obj) {
+inline std::ostreaminline std::ostream& operator<<(std::ostream& out, const jsson::JsonObjectconst JsonObject& obj obj) { operator<<(std::ostreaminline std::ostream& operator<<(std::ostream& out, const jsson::JsonObjectconst JsonObject& obj obj) { out, const jsson::JsonObjectinline std::ostream& operator<<(std::ostream& out, const jsson::JsonObjectconst JsonObject& obj obj) { obj) {
     JsonDumper dumper;
     dumper.dump(std::make_shared<const JsonObject>(obj), out);
     return out;
@@ -91,12 +91,10 @@ inline std::ostream& operator<<(std::ostream& out, const JsonObject& obj) {
  * @param arr The JSON array to serialize.
  * @return The output stream reference.
  */
-inline std::ostream& operator<<(std::ostream& out, const JsonArray& arr) {
+inline std::ostream& operator<<(std::ostream& out, const jsson::JsonArrayconst JsonArray& arr arr) {
     JsonDumper dumper;
     dumper.dump(std::make_shared<const JsonArray>(arr), out);
     return out;
 }
-
-#endif // DUMP_HPP
 
 #endif // DUMP_HPP
